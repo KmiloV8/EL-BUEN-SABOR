@@ -17,53 +17,7 @@
               </nav>
             </header>
         </div>
-        <div class="carrusel">
-          <h1 class="car"></h1>
-          <div class="image-slider">
-              <div class="image-slider-track">
-                  <div class="slide">
-                      <img class='img' src="../assets/producto1.png">
-                  </div>
-                  <div class="slide">
-                      <img class='img' src="../assets/producto2.png">
-                  </div>
-                  <div class="slide">
-                      <img class='img' src="../assets/producto3.jpg">
-                  </div>
-      
-                  <div class="slide">
-                      <img class='img' src="../assets/producto4.jpg">
-                  </div>
-                  <div class="slide">
-                      <img class='img' src="../assets/producto5.jpg">
-                  </div>
-                  <div class="slide">
-                      <img class='img' src="../assets/producto6.jpg">
-                  </div>
-      
-                  <div class="slide">
-                      <img class='img' src="../assets/producto7.jpg">
-                  </div>
-                  <div class="slide">
-                      <img class='img' src="../assets/producto8.jpg">
-                  </div>
-                  <div class="slide">
-                      <img class='img' src="../assets/mueble1.jpg">
-                  </div>
-      
-                  <div class="slide">
-                      <img class='img' src="../assets/mueble2.jpg">
-                  </div>
-                  <div class="slide">
-                      <img class='img' src="../assets/mueble3.jpg">
-                  </div>
-                  <div class="slide">
-                      <img class='img' src="../assets/closet7.jpg">
-                  </div>
-                  
-              </div>
-          </div>
-    </div>
+        
     <header id="header" class="header">
           <div class="container">
               <div class="row">
@@ -594,7 +548,7 @@ function limpiarHtmlTotal(){
   h1.pie{
   font-family: 'Miniver', cursive;
   font-size: 50px;
-  text-shadow: 3px 3px #edd4c1;
+  text-shadow: 4px 4px #d4c7bc;
   color:rgb(163, 142, 125);
   text-align: center;
   }
@@ -921,7 +875,7 @@ display:flex;
 }
 .card {
     text-align: center;
-    border: 4px solid #e3cdc3;
+    border: 2px solid #170801;
     background: white;
 }
 @media (min-width: 550px) {
@@ -1112,7 +1066,7 @@ body {
   input[type="reset"].button-primary,
   input[type="button"].button-primary {
     color: #FFF;
-    background-color: #a38e7d;
+    background-color: #c85c04;
     border-color: #e3cdc3; }
   .button.button-primary:hover,
   button.button-primary:hover,
@@ -1125,8 +1079,8 @@ body {
   input[type="reset"].button-primary:focus,
   input[type="button"].button-primary:focus {
     color: #FFF;
-    background-color: #976b0c;
-    border-color: #976b0c; }
+    background-color: #cb7d34;
+    border-color: #9c3816; }
   
   
   /* Forms
@@ -1755,9 +1709,11 @@ body {
     font-size: 12px;
   }
   h4 { 
-    font-size: 1rem; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
+    font-style:inherit; 
     line-height: 1.35; 
-    letter-spacing: -.08rem; 
+    letter-spacing: -.09rem; 
   }
   header.hea {
     background: #000000;
@@ -1853,7 +1809,7 @@ body {
   }  
   h1.pie{
     font-family:'Kaushan Script';
-    color: #000;
+    color: #e45c13;
     font-size: 100px;
   }
   img.foto{
@@ -1870,7 +1826,16 @@ body {
  }
  #encabezado{
   font-family: Arial, Helvetica, sans-serif;
-  color:#000;
+  color:rgb(0, 0, 0);
   font-size: 40px;
+ }
+ div.enc{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/fondo-cabecera.jpg');
+  background-size: 100%;
+  margin:auto;
+  display:block;
+  width:100%;
+  height: 100%;
+  background-repeat: no-repeat;
  }
   </style> 
