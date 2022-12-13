@@ -1,8 +1,7 @@
 <template>
   <div>
     <h3>Registrar Usuarios</h3>
-
-    <div class="card" style="width: 35rem">
+    <div class="card">
       <div class="card-body">
         <h5 class="card-title">¡Registrar Nuevo Usuario!</h5>
 
@@ -65,7 +64,7 @@ export default {
         }
         /*    store.dispatch("addPersona", persona);        
         router.push('/print') */
-        axios.post('https://vueinventarioaxiossa-default-rtdb.firebaseio.com/persona.json',persona).then(res=>console.log(res)).catch(error => console.log(error))
+        axios.post('https://sindo-1557c-default-rtdb.firebaseio.com/persona.json',persona).then(res=>console.log(res)).catch(error => console.log(error))
       }
     }
     return{nombreusuario, password , addPersona}
@@ -93,6 +92,10 @@ export default {
 };
 </script>
 <style scoped>
+
+
+
+
 .main[data-v-04b5aa7d] {
     background: rgba(178, 135, 98, 0.269);
     position: absolute;
@@ -111,6 +114,7 @@ rem
     display: flex;
 }
 .card-body{
+  text-align: center;
   padding: 40px;
   margin-top: 20px;
   align-content: center;
@@ -122,9 +126,10 @@ div{
   border-radius: 30px;  
 }
 .card{
-  padding: 10px;
-  align-content: center;
-  width: 300px;
+  
+  
+  padding: 1px;
+  width: 500px;
   background-color: rgba(247, 180, 45, 0.269);
 }
 h3{
@@ -155,7 +160,9 @@ h3{
 h5{
   font-family: arial black;
   font-size: 40px;
-  color:rgb(150, 128, 110);
+  color:#222;
   text-align: center;
 }
+
+
 </style>

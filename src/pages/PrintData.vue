@@ -4,7 +4,7 @@
 
     <ul class="list-group">
       <li v-for="(persona, i) in personas" :key="i"  class="list-group-item">
-        <router-link :to="`/details/${i}`">{{
+        <router-link :to="`/details/${persona.id}`">{{
           persona.nombreusuario
         }}</router-link>
       </li>
@@ -18,7 +18,7 @@ import {ref} from 'vue';
 export default {
   setup(){
     const personas = ref([])
-  axios.get('https://vueinventarioaxiossa-default-rtdb.firebaseio.com/persona.json')
+  axios.get('https://sindo-1557c-default-rtdb.firebaseio.com/persona.json')
   .then(res =>{
     console.log(res)
     for(const id in res.data){

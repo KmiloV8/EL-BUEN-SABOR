@@ -79,6 +79,7 @@ if (this.usuarios.length >= 1){
  /*  router.push('/Imprimir'); */
  this.$store.state.mostrar = true
  this.router.push('/');
+ this.$store.state.login = false
 }else{  
   alert("Usuario y contraseña incorrecto")
 }

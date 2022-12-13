@@ -718,7 +718,7 @@ min-height: 2cm;
       transform: translateZ(20px);
   }
   body {
-    background-color: #f3c47f
+    background-color: rgb(248, 238, 211)
 }
 h1 {
     text-align: center;
@@ -727,8 +727,13 @@ h2 {
     font-size: 3rem;
 }
 header {
-    padding: -1px 0;
-    background: #ee641a; /* Old browsers */
+  padding: 20px;
+  background: #b57c00; /* Old browsers */
+  background: -moz-linear-gradient(left, #b57c00 0%, #f7d547 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #b57c00 0%,#f7d547 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #b57c00 0%,#f7d547 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b57c00', endColorstr='#f7d547',GradientType=1 ); /* IE6-9 */
+  text-align: center;
 }
 
 @media (min-width: 750px) {
@@ -871,7 +876,7 @@ display:flex;
     transition: transform .5s;
 }
 .card:hover{
-    transform: scale(1.12);
+    transform: scale(1.1);
 }
 .card {
     text-align: center;
@@ -1815,7 +1820,7 @@ body {
   img.foto{
   height: 200px;
   margin-top: 20px;
-  border-radius:50px;
+  border-radius:100%;
   }
  #img-carrito{
   filter: invert(0%)

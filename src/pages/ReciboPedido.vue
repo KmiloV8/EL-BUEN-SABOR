@@ -3,82 +3,41 @@
     <title>Haz Tu Pedido</title>
 </head>
 <body>
-    <h1>¡Realiza Tu Pedido Con Nosotros!</h1>
-    <h2>Formulario Para Diligenciar Tu Pedido</h2>
-    <h6><br/>Recuerda que para diligenciar tu pedido debes conocer los soguientes datos del producto
-        <br/>que deseas adquirir: Nombre del producto,Código del producto(el cual se muestra debajo de la imagen 
-        <br/>de cada producto), Tipo de madera, Medio de pago, TIpo de tela, Color y tipo de pintura.
-    </h6>
+    <h1>¡Que Deseas Ordenar!</h1>
     <div id="whatToPrint">
     <form>
         <fieldset>
 
-            <legend>Datos del Producto</legend>
-            <p>
-                <label>Codigo del Producto</label>
-                <input type="text" name="codigo" size="30px" placeholder="Ingrese el código del producto">
-            </p>
+            <legend>Pedido</legend>
             <p>
                 <label>Nombre del Producto</label>
                 <input type="text" name="nombre-producto" size="30px" placeholder="Ingrese el nombre del producto">
             </p>
-            <h6>Si el tipo de madera que buscas no se encuentra dentro de las opciones, por favor escoge la opción(Otro..cual) 
-                y digítalo en la barra de texto que está al lado.
-            </h6>
-            <p>
-                <label>Tipo de Madera</label>
-                <select name="Tipo de madera">
-                    <option value="0"></option>
-                    <option value="">opción 1</option>
-                    <option value="">opción 2</option>
-                    <option value="">opción 3</option>
-                    <option value="">opción 4</option>
-                    <option value="">Otro...cual
-                        <input type="text" name="otra madera" size="20px">
-                    </option>
-                </select>
-            </p>
-            <h6>Para realizar el pago de tu pedido, debes ponerte en contacto con el administrador vía whatsapp o por 
-                llamada telefónica, a continuación te dejamos su contacto(SE PIDE AMABLEMENTE QUE SOLO SE CONTACTE CON
-                EL VENDEDOR EN CASO DE SOLICITAR INFORMACIÓN ACERCA DE UN PRODUCTO O UN PEDIDO): 3174816178
-            </h6>
             <p>
                 <label>Medio de Pago</label>
                 <select name="Medio de pago">
                     <option value="0"></option>
-                    <option value="">Transferencia</option>
                     <option value="">Consignación(Nequi)</option>
                     <option value="">Efectivo</option>
                 </select>
             </p>
+            
+            <h6>si desea agregar un adicional ingrese que desea (si no quiere un adicional puede omitir este espacio) 
+            </h6>
             <p>
-                <label>Tipo de Tela</label>
-                <select name="Tipo de tela">
-                    <option value="0"></option>
-                    <option value="">Opción 1</option>
-                    <option value="">Opción 2</option>
-                    <option value="">Opción 3</option>
-                    <option value="">Otro...cual
-                        <input type="text" name="otra tela" size="20px">
-                    </option>
-                </select>
+                <label>Adicional</label>
+                <input type="text" name="nombre-producto" size="30px" placeholder="Ingrese el adicional">
             </p>
+            <hr>
             <legend>Datos Personales</legend>
             <p>
                 <label>Nombres y Apellidos</label>
                 <input type="text" name="nombre" size="30px" placeholder="Nombre(s) y apellidos">
             </p>
+            
             <p>
-                <label>Tipo de Documento</label>
-                <select name="documento de identidad">
-                    <option value="">Cédula de ciudadanía</option>
-                    <option value="">Tarjeta de identidad</option>
-                    <option value="">Cédula de extranjería</option>
-                </select>
-            </p>
-            <p>
-                <label>N° de Documento</label>
-                <input type="text" name="n°-documento" size="30px" placeholder="Número de documento">
+                <label>N° de Telefono</label>
+                <input type="text" name="n°-documento" size="30px" placeholder="Número de telefono">
             </p>
             <p>
                 <label>Fecha Del Pedido</label>
@@ -130,7 +89,7 @@ form{
     width: 800px;
     height: auto;
     margin:auto;
-    background-color: rgba(247, 180, 45, 0.269);
+    background-color: rgba(247, 180, 45, 0.397);
     border-radius: 30px;
     border-style: solid;
     border-width: 2px;
@@ -171,7 +130,8 @@ input{
     padding: 10px;
 }
 a{
-    background-color: rgb(135, 101, 70);
+    background-color: #f4b41a;
+    border-color: #f4b41a;
     color:white;
     padding:15px;
     text-decoration: none;
@@ -183,6 +143,8 @@ a{
     cursor:pointer;          
 }
 a:hover{
-    background-color: rgb(111, 76, 43);
+    color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB;
 }
 </style>

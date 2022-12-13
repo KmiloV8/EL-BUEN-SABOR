@@ -4,8 +4,8 @@
       <h5 class="card-header">{{ persona.nombre }}</h5>
       <div class="card-body">
         <div class="card-text">
-          <p>Mail : {{persona.email}}</p>
-          <p>Aporte : {{persona.aporte}}</p>
+          <p>usuario : {{persona.nombre}}</p>
+          <p>contrasña : {{persona.contraseña}}</p>
         </div>
        
       </div>
@@ -35,9 +35,9 @@ setup(){
       const index = route.params.index;
     /*   return store.getters.getPersona(index); */
    /*  }) */
-   axios.get('https://vueinventarioaxiossa-default-rtdb.firebaseio.com/persona/'+index+'.json')
+   axios.get('https://sindo-1557c-default-rtdb.firebaseio.com/persona/'+index+'.json')
    .then(res=>{
-    console.log(res)
+    console.log(res.data)
     persona.value = res.data
    })
    .catch(error => console.log(error))
