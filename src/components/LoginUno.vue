@@ -98,7 +98,7 @@ this.usuarios.value=[]
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .main {
-  background: rgba(247, 180, 45, 0.269);
+  background: rgba(227, 167, 55, 0.823);
   position:absolute;
   top: 20%;
   left: 35%;
@@ -116,7 +116,7 @@ this.usuarios.value=[]
 h1 {
   cursor: default;
   user-select: none;
-  color:rgb(150, 128, 110); 
+  color:rgb(17, 11, 6); 
   display: flex;
 }
 
@@ -142,7 +142,7 @@ input:active {
 }
 
 #done {
-  background: rgb(135, 101, 70);
+  background: rgb(20, 14, 7);
 }
 #done:hover{
   color:white;
