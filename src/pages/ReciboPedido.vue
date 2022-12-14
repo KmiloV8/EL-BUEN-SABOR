@@ -16,7 +16,7 @@
             <p>
                 <label>Medio de Pago</label>
                 <select name="Medio de pago">
-                    <option value="0"></option>
+                    <option value="0">selecciona una opción</option>
                     <option value="">Consignación(Nequi)</option>
                     <option value="">Efectivo</option>
                 </select>
@@ -41,7 +41,7 @@
             </p>
             <p>
                 <label>Fecha Del Pedido</label>
-                <input type="DATE" name="fecha-n">
+                <input type="date" name="fecha-n">
             </p>
             <p>
                 <label>Dirección</label>

@@ -753,7 +753,7 @@ header {
     }
 }
 .borrar-curso {
-    background-color: rgb(244, 233, 213);
+    background-color: rgba(255, 233, 31, 0.815) ;
     border-radius: 50%;
     padding: 5px 10px;
     text-decoration: none;
@@ -771,6 +771,11 @@ ul {
 .submenu {
     position:absolute;
 }
+.submenu a{
+  color: black;
+}
+
+
 
 .submenu #carrito{
     display: none;
@@ -878,6 +883,7 @@ margin-top:340px;
 right:auto;
 left:auto;
 display:flex;
+background-color: rgba(255, 233, 31, 0.815) ;
 }
 
 #lista-carrito{
@@ -1081,9 +1087,9 @@ body {
   input[type="submit"].button-primary,
   input[type="reset"].button-primary,
   input[type="button"].button-primary {
-    color: #FFF;
-    background-color: #c85c04;
-    border-color: #e3cdc3; }
+    color: #143d59;
+  background-color: #f4b41a;
+  border-color: #f4b41a; }
   .button.button-primary:hover,
   button.button-primary:hover,
   input[type="submit"].button-primary:hover,
@@ -1095,8 +1101,8 @@ body {
   input[type="reset"].button-primary:focus,
   input[type="button"].button-primary:focus {
     color: #FFF;
-    background-color: #cb7d34;
-    border-color: #9c3816; }
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; }
   
   
   /* Forms
