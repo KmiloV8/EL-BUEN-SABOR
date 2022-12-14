@@ -89,7 +89,7 @@ form{
     width: 800px;
     height: auto;
     margin:auto;
-    background-color: rgba(247, 180, 45, 0.397);
+    background-color: rgba(227, 167, 55, 0.823);
     border-radius: 30px;
     border-style: solid;
     border-width: 2px;
@@ -98,7 +98,7 @@ h1{
     font-family: arial black;
     text-align: center;
     cursor:default;
-    color:rgb(150, 128, 110);
+    color:rgb(22, 15, 9);
 }
 h2{
     font-family:Arial, Helvetica, sans-serif;
