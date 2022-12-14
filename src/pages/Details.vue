@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="card" v-if="persona != undefined">
-      <h5 class="card-header">{{ persona.nombre }}</h5>
+    <div class="card" v-if="personas != undefined">
+      <h5 class="card-header">{{ personas.nombreusuario }}</h5>
       <div class="card-body">
         <div class="card-text">
-          <p>usuario : {{persona.nombre}}</p>
-          <p>contrasña : {{persona.contraseña}}</p>
+          <p>Nombre: {{personas.nombreusuario}}</p>
+          <p>Contraseña: {{personas.password}}</p>
         </div>
        
       </div>
@@ -28,8 +28,8 @@ import axios from 'axios'
 export default {
 setup(){
   /*   const store = useStore() */
-    const route = useRoute()
-    const persona = ref("")
+     const route = useRoute()
+    const personas = ref([])
 
    /*  const persona = computed(()=>{ */
       const index = route.params.index;
@@ -38,16 +38,11 @@ setup(){
    axios.get('https://sindo-1557c-default-rtdb.firebaseio.com/persona/'+index+'.json')
    .then(res=>{
     console.log(res.data)
-    persona.value = res.data
+    personas.value = res.data
+    
    })
    .catch(error => console.log(error))
-    return {persona}
+    return {personas}
   }
-  // computed: {
-  //   persona() {
-  //     const index = this.$route.params.index;
-  //     return this.$store.getters.getPersona(index);
-  //   },
-  // },
   };
 </script>

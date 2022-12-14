@@ -3,7 +3,7 @@
     <h3>Lista de Usuarios</h3>
 
     <ul class="list-group">
-      <li v-for="(persona, i) in personas" :key="i"  class="list-group-item">
+      <li v-for="(persona, i) in personas" :key="i"  class="list-group-item" >
         <router-link :to="`/details/${persona.id}`">{{
           persona.nombreusuario
         }}</router-link>

@@ -1,7 +1,8 @@
 <template>
   <div>
     <h3>Registrar Usuarios</h3>
-    <div class="card">
+
+    <div class="card" style="width: 35rem">
       <div class="card-body">
         <h5 class="card-title">¡Registrar Nuevo Usuario!</h5>
 
@@ -45,12 +46,12 @@
 /*eslint-disable*/
 import {ref} from 'vue'
 import axios from 'axios'
-import {useStore} from 'vuex'
-import {useRouter} from 'vue-router'
+//import {useStore} from 'vuex'
+//import {useRouter} from 'vue-router'
 export default {
   setup(){
-    const store = useStore()
-    const router = useRouter()
+    //const store = useStore()
+    //const router = useRouter()
     const nombreusuario = ref("")
     const password = ref("")
     //const aporte = ref("")
@@ -92,10 +93,6 @@ export default {
 };
 </script>
 <style scoped>
-
-
-
-
 .main[data-v-04b5aa7d] {
     background: rgba(178, 135, 98, 0.269);
     position: absolute;
@@ -114,7 +111,6 @@ rem
     display: flex;
 }
 .card-body{
-  text-align: center;
   padding: 40px;
   margin-top: 20px;
   align-content: center;
@@ -126,11 +122,10 @@ div{
   border-radius: 30px;  
 }
 .card{
-  
-  
-  padding: 1px;
-  width: 500px;
-  background-color: rgba(247, 180, 45, 0.269);
+  padding: 10px;
+  align-content: center;
+  width: 300px;
+  background-color: rgba(227, 167, 55, 0.823);
 }
 h3{
   text-align: center;
@@ -138,8 +133,8 @@ h3{
 }
 .btn-primary {
     color: #fff;
-    background-color: #7b6134;
-    border-color: #523918;
+    background-color: #33260f;
+    border-color: #1c1205;
 }
 .form-control {
     display: block;
@@ -160,9 +155,7 @@ h3{
 h5{
   font-family: arial black;
   font-size: 40px;
-  color:#222;
+  color:rgb(36, 30, 24);
   text-align: center;
 }
-
-
 </style>

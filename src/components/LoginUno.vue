@@ -60,7 +60,7 @@ mounted(){
 },
 methods:{
   buscarUsuario(){
-  axios.get('https://vueinventarioaxiossa-default-rtdb.firebaseio.com/persona.json')
+  axios.get('https://sindo-1557c-default-rtdb.firebaseio.com/persona.json')
   .then(res=>{console.log(res);
     console.log(this.nombreusuario,'usuario')
     console.log(this.password,'usuario')
